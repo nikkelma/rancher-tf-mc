@@ -1,25 +1,23 @@
 # Rancher Master Class: Terraform
 
-This is the PRIVATE repository for the Rancher Terraform master class - if
-anything is marked PRIVATE, it shouldn't be in the public version!
+This is the repository for the Rancher Terraform master class - if
+anything is marked PRIVATE, it shouldn't be made public!
 
-## Create a Rancher server
+# Examples only - by default, not intended for direct use
 
-I've chosen to use k3s as the Kubernetes cluster where Rancher is installed, mainly because I wanted
-to avoid using the RKE terraform provider (`terraform-provider-rke`).
+> These are examples to show some useful patterns, and only if directly mentioned should they be
+> considered for direct reuse.
 
-`terraform-provider-rke` is best effort support under the Rancher SLA and, while it works well, the
-patterns currently used by RKE (and therefore `terraform-provider-rke`) will end as soon as RKE2 is
-released. RKE2 will use patterns very similar to K3S, so those patterns are demonstrated here.
+I've learned a ton by refactoring Rancher's quickstart to fully use terraform, and then wanted to
+learn more by giving a class on what I've learned (forcing me to learn even more). My experience is
+in writing modules intended to fulfill a very direct purpose or with the intention of being reused.
 
-Finally, we're in the process of allowing Rancher to be installed into any Kubernetes cluster. That
-means the underlying distribution of k8s will matter much less, and therefore the "create a cluster"
-portion of installing a Rancher server will also be deemphasized.
+Specicially, I have little experience in managing root modules - therefore, these are examples to
+show some useful patterns, and only if directly mentioned should they be considered for direct
+reuse.
 
-K3S requires an external HA datastore for full HA functionality, which is required for a Rancher
-server. The easiest path to this is a managed database service, like Amazon's RDS.
+## Documentation coming soon
 
-All Rancher servers are best load balanced by a layer 4 load balancer, so Amazon's NLB will be used
-for this purpose. Best practices require a trusted SSL certificate to be used, so Let's Encrypt
-will be used when installing Rancher.
+I plan to condense this info into README files and Rancher blog posts, so keep an eye out for those
+to give more context around this content.
 
