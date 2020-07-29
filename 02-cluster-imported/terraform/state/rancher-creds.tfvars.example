@@ -1,0 +1,8 @@
+# Rancher Server URL
+rancher_api_url = ""
+
+# Rancher Access Key
+rancher_access_key = ""
+
+# Rancher Secret Key
+rancher_secret_key = ""

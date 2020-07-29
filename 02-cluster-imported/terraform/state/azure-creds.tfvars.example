@@ -1,0 +1,11 @@
+# Azure Subscription ID
+azurerm_subscription_id = ""
+
+# Azure Client ID
+azurerm_client_id = ""
+
+# Azure Client Secret
+azurerm_client_secret = ""
+
+# Azure Tenant ID
+azurerm_tenant_id = ""

@@ -1,0 +1,8 @@
+# AWS CLI profile name
+aws_profile = ""
+
+# # AWS region
+# aws_region = ""
+
+# Creator for AWS resources
+creator = ""
